@@ -1,0 +1,14 @@
+[
+  {
+    "name": "version_frame",
+    "pattern": "\\d+(\\.\\d+)*"
+  },
+  {
+    "name": "nombre",
+    "pattern": "(\\bIvo\\b|\\bNico\\b|\\bFran\\b|\\bMarcos\\b|\\bGabriel\\b|\\bMartin\\b|\\bJosé\\b|\\bJuan\\b)"
+  },
+  {
+    "name": "framework",
+    "pattern": "(\\brasa\\b|\\bdialogflow\\b|\\bmicrosoft\\ bot\\ framework\\b|\\bIBM\\ watson\\ assistant\\b|\\bwatson\\b|\\bwatson\\ assistant\\b|\\bamazon\\ lex\\b|\\blex\\b|\\bLUIS\\b)"
+  }
+]

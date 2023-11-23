@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-framework",
+      "2": "I-framework",
+      "3": "L-framework",
+      "4": "U-framework",
+      "5": "B-nombre",
+      "6": "I-nombre",
+      "7": "L-nombre",
+      "8": "U-nombre",
+      "9": "B-version_frame",
+      "10": "I-version_frame",
+      "11": "L-version_frame",
+      "12": "U-version_frame",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-framework": 1,
+      "I-framework": 2,
+      "L-framework": 3,
+      "U-framework": 4,
+      "B-nombre": 5,
+      "I-nombre": 6,
+      "L-nombre": 7,
+      "U-nombre": 8,
+      "B-version_frame": 9,
+      "I-version_frame": 10,
+      "L-version_frame": 11,
+      "U-version_frame": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "cant_horas",
+    "pattern": "^(\\d{1,2})$"
+  },
+  {
+    "name": "nombre_trabajo",
+    "pattern": "^[A-Z][a-zA-Z0-9]*$"
+  },
+  {
+    "name": "version_frame",
+    "pattern": "\\d+(\\.\\d+)*"
+  },
+  {
+    "name": "nombre",
+    "pattern": "(\\bIvo\\b|\\bNico\\b|\\bFran\\b|\\bMarcos\\b|\\bGabriel\\b|\\bMartin\\b|\\bJosé\\b|\\bJuan\\b|\\bLucas\\b|\\bValentin\\b|\\bNicolas\\b|\\bFranco\\b|\\bFrancisco\\b|\\bJulian\\b|\\bLuca\\b|\\bAngel\\b|\\bÁngel\\b|\\bTomas\\b|\\bNehuen\\b|\\bYeltsin\\b|\\bAitor\\b|\\bGonzalo\\b|\\bFausto\\b|\\bMáximo\\b|\\bMaximiliano\\b|\\bAlejandro\\b|\\bSantiago\\b|\\bSergio\\b|\\bLuis\\b)"
+  },
+  {
+    "name": "framework",
+    "pattern": "(\\brasa\\b|\\bdialogflow\\b|\\bmicrosoft\\ bot\\ framework\\b|\\bIBM\\ watson\\ assistant\\b|\\bwatson\\b|\\bwatson\\ assistant\\b|\\bamazon\\ lex\\b|\\blex\\b|\\bLUIS\\b)"
+  }
+]

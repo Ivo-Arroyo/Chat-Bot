@@ -1,0 +1,304 @@
+version: "3.1"
+nlu:
+- intent: saludo
+  examples: |
+    - hola
+    - holis
+    - holaa
+    - holisss
+    - holiwis
+    - buenas
+    - muy buenasss
+    - buenas buenass
+    - buen día
+    - buenas tardes
+    - buenas noches
+
+- intent: despedida
+  examples: |
+    - chau
+    - bye
+    - nos vemos
+    - hasta luego
+    - hasta pronto
+    - nos vemos luego
+    - nos vemos, chau
+
+- intent: feliz
+  examples: |
+    - feliz
+    - bien
+    - contento y vos?
+    - muy feliz
+    - re contento
+    - emocionado
+    - con mucha alegria y vos?
+    - muy alegre
+    - genial
+    - de 10
+    - de 10 para 11
+    - bien y vos?
+    - todo tranqui
+    - bien, todo tranqui
+    - bienn y vos??
+
+- intent: triste
+  examples: |
+    - mal
+    - muy triste
+    - pésimo
+    - horrible
+    - para atras
+    - menos 10
+    - triste
+    - con mucha tristeza
+
+- intent: capturar_nombre
+  examples: |
+    - Mi nombre es [Ivo](nombre)
+    - Soy [Nico](nombre)
+    - [Fran](nombre)
+    - Me podes decir [Marcos](nombre)
+    - Me llamo [Gabriel](nombre)
+
+- intent: afirmativo
+  examples: |
+    - exactamente
+    - así es
+    - por supuesto
+    - sin duda
+    - obvioo
+    - por supuesto que sí
+    - sí
+    - totalmente
+    - claro que sí
+    - see
+    - sisi
+    - sii
+
+- intent: capturar_framework
+  examples: |
+    - Estoy usando actualmente [rasa](framework)
+    - uso [dialogflow](framework)
+    - vengo usando todo este tiempo [watson](framework)
+    - vengo usando [rasa](framework)
+    - tengo [dialogflow](framework)
+
+- intent: capturar_version
+  examples: |
+    - la versión que estoy usando es [9.3.5](version_frame)
+    - estoy usando actualmente la version [1.8.2.6.4](version_frame)
+    - la version [8](version_frame)
+    - uso la version [8.9](version_frame)
+
+- intent: tengo_u_version
+  examples: |
+    - Tengo la ultima version?
+    - estoy usando la ultima version?
+    - quiero saber si tengo la ultima version de [rasa](framework)
+    - tengo la ultima?? por favor
+    - me decis si tengo la ultima version? porfa
+    - porfa me decis si tengo la ultima version?
+
+- intent: quiere_mas_info
+  examples: |
+    - de una che, me darías mas info sobre esa version?
+    - dale, tirame toda la data jaja
+    - bueno, contame que onda con eso
+    - conta que onda dale
+    - me estas queriendo vender, dale contame jaja
+
+- intent: cambia_version
+  examples: |
+    - listo, cuando pueda voy a cambiar de version
+    - ni bien pueda la actualizo entonces
+    - joya, cambio la version en estos dias
+    - de una, despues cambio la version
+
+- intent: no_cambia
+  examples: |
+    - ahh bueno 
+    - mmm tengo mis dudas..
+    - no sé no me termina de convencer
+    - la verdad no veo que sea tann superior como para cambiar
+    - no lo voy a cambiar
+    - no creo que cambie
+    - me quedo con la version que tengo
+    - na, me quedo con esta version
+
+- intent: cambio_de_version
+  examples: |
+    - Al final cambié la version como te había contado
+    - al final cambié la version
+    - al final cambié de version
+    - cambié de version jeje
+    - cambié la version
+    - che, terminé cambiando de version
+    - sabías que cambié la version?
+
+- intent: datos_para_emigrar
+  examples: |
+    - Me dirías a qué otros framework podría emigrar?
+    - tengo ganas de emigrar a otra plataforma
+    - tengo ganas de emigrar a otro framework
+    - quiero cambiar de framework
+    - quiero emigrar 
+    - ya me cansé de [watson](framework), quiero emigrar
+
+- intent: cambiar_framework
+  examples: |
+    - Me gustaría cambiar a [rasa](framework)
+    - capaz que me cambio para [dialogflow](framework)
+    - tiene buena pinta [watson](framework), agendo para cambiarlo
+    - la verdad que me llama mucho la atencion [watson](framework)
+    - parece piola [rasa](framework), voy a emigrar
+
+- intent: detalles_de_framework
+  examples: |
+    - Me darias informacion de [rasa](framework)
+    - Me conta que onda con [watson](framework)
+    - Dame detalles de [rasa](framework)
+    - Contame sobre [dialogflow](framework)
+    - dame info sobre [rasa](framework)
+    - dame info de [watson](framework)
+    - quiero saber mas de [rasa](framework)
+
+- intent: cambio_de_framework
+  examples: |
+    - Al final cambié de framework como te había contado
+    - al final cambié de framework
+    - al final cambié de plataforma
+    - cambié de plataforma jeje
+    - cambié el framework que usaba
+    - che, terminé cambiando de frame
+    - sabías que cambié la framework?
+  
+- intent: hablar_de_trabajo
+  examples: |
+    - Bueno hablemos de trabajo
+    - te voy a contar como me manejo para trabajar
+    - bueno, te cuento como trabajo
+    - Charlemos de como me manejo para trabajar
+    - te pongo al tanto de como trabajo
+    - te cuento como trabajo
+
+- intent: horas_semanales
+  examples: |
+    - Estoy haciendo [34](cant_horas) horas semanales
+    - Estoy metiendo [44](cant_horas) horas semanales
+    - hago [24](cant_horas) horas semanales
+    - Siempre ando alrededor de [28](cant_horas) horas semanales
+    - [15](cant_horas) horas semanales 
+    - [17](cant_horas) horas semanales ando metiendo
+    - [25](cant_horas) horas semanales estoy haciendo
+
+- intent: nuevo_trabajo
+  examples: |
+    - Tengo un nuevo trabajo [Trabajo1](nombre_trabajo) son [4](cant_horas) horas semanales
+    - estoy con un trabajo [T2](nombre_trabajo) son [10](cant_horas) horas semanales
+    - estoy con un trabajo [Open3](nombre_trabajo) dura [3](cant_horas) horas semanales
+    - empece un trabajito, su nombre [Migs5i](nombre_trabajo) con [31](cant_horas) horas semanales
+    - metí un trabajito nuevo dura [14](cant_horas) horas semanales, se llama [Asd43fe](nombre_trabajo)
+    - ahora estoy trabajando en [Afsg34ef2](nombre_trabajo), y es [1](cant_horas) hora semanal
+
+- intent: cambia_hs_trabajo
+  examples: |
+    - cambiaron las cosas ahora [Trabajo1](nombre_trabajo) pasó a durar [14](cant_horas) horas semanales
+    - ahora [Tr14](nombre_trabajo) cambió a [4](cant_horas) horas semanales
+    - hubo cierto cambio y ahora [T4](nombre_trabajo) tuvo que subir a [10](cant_horas) horas semanales
+    - cambio todo ahora [Tp4](nombre_trabajo) tuvo que bajar a solo [5](cant_horas) horas semanales
+    - metimos un cambio y [Ap43](nombre_trabajo) pasó a [8](cant_horas) horas semanales
+
+- intent: horas_de_trabajo
+  examples: |
+    - dame el total de horas acumulado?
+    - tenes el total de horas acumulado?
+    - me das el total de horas acumulado?
+    - dame el total de horas semanales acumulado?
+    - tenes el total de horas semanales acumulado?
+    - me das el total de horas semanales acumulado?
+    - me decís cuantas horas semanales acumulo?
+    - cuantas horas trabajo semanalmente?
+
+
+- intent: dame_mis_trabajos
+  examples: |
+    - Dame mis trabajos
+    - mostrame mis trabajos
+    - tenes mis trabajos?
+    - tenes mis trabajos a mano?
+    - podrias darme mis trabajos?
+    - podes darme mis trabajos?
+    - me darias mis trabajos?
+    - me mostras mis trabajos?
+    - tenes los trabajos que hago?
+    - tenes mis trabajos a mano?
+
+- intent: fin_trabajo
+  examples: |
+    - el trabajo [T2](nombre_trabajo) ya terminó
+    - el trabajo [T232](nombre_trabajo) finalizó
+    - terminé el trabajo [Asdf232](nombre_trabajo)
+    - ya terminó [Vxz232](nombre_trabajo)
+    - ya terminamos [X2as32](nombre_trabajo)
+    - [Xas32](nombre_trabajo) ya terminó
+    - viste [MX2as32](nombre_trabajo)? terminó
+    - viste [MX2as32](nombre_trabajo)? lo dejé
+    - viste [M22](nombre_trabajo)? ya lo dejé
+    - dejé [RTM22](nombre_trabajo)
+
+- lookup: nombre
+  examples: |
+    - Ivo
+    - Nico
+    - Fran
+    - Marcos
+    - Gabriel
+    - Martin
+    - José
+    - Juan
+    - Lucas
+    - Valentin
+    - Nicolas
+    - Franco
+    - Francisco
+    - Julian
+    - Luca
+    - Angel
+    - Ángel
+    - Tomas
+    - Nehuen
+    - Yeltsin
+    - Aitor
+    - Gonzalo
+    - Fausto
+    - Máximo
+    - Maximiliano
+    - Alejandro
+    - Santiago
+    - Sergio
+    - Luis
+- lookup: framework
+  examples: |
+    - rasa
+    - dialogflow
+    - microsoft bot framework
+    - IBM watson assistant
+    - watson
+    - watson assistant
+    - amazon lex
+    - lex
+    - LUIS
+
+
+- regex: version_frame
+  examples: |
+    - \d+(\.\d+)*
+
+- regex: cant_horas
+  examples: |
+    - ^(\d{1,2})$
+
+- regex: nombre_trabajo
+  examples: |
+    - ^[A-Z][a-zA-Z0-9]*$

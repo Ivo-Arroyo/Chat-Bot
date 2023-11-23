@@ -1,0 +1,139 @@
+version: '3.1'
+intents:
+- fin_trabajo #
+- dame_mis_trabajos #
+- horas_de_trabajo #
+- cambia_hs_trabajo #
+- nuevo_trabajo #
+- horas_semanales #
+- hablar_de_trabajo #
+- cambio_de_framework #
+- cambio_de_version #
+- cambia_version  #
+- tengo_u_version #
+- afirmativo  #
+- capturar_framework  #
+- capturar_nombre #
+- capturar_version  #
+- despedida #
+- feliz #
+- saludo  #
+- triste  #
+- datos_para_emigrar  #
+- no_cambia #
+- quiere_mas_info # 
+- cambiar_framework #
+- detalles_de_framework #
+
+
+
+responses:  
+  utter_please_rephrase:
+  - text: Uhh no te estoy entendiendo, perdon. Podes explicarte de otra forma?
+
+  utter_no_hay_datos_version:
+  - text: "No recuerdo que me contaras que ibas a cambiar de version, qué versión estás usando entonces?"
+
+  utter_no_hay_datos_frame:
+  - text: "No recuerdo que me contaras que ibas a cambiar de framework, qué frame estás usando entonces?"
+
+  utter_horas_semanales:
+  - text: "Bueno, cuantas horas semanales tenes para trabajar? en proyectos y eso"
+
+  utter_great:
+  - text: "Que bien! "
+
+  
+
+
+actions:
+- action_fin_trabajo
+- action_dar_trabajos
+- action_dar_horas_trabajo #
+- action_hs_trabajo #
+- action_guardar_hs_max #
+- action_cambio_de_framework  #
+- action_guardar_decision_frame #
+- action_cambio_de_version #
+- action_version  #
+- action_guardar_frame  #
+- action_guardar_version  #
+- action_utter_framework  #
+- action_verificar_ultima_version #
+- action_dar_detalles_ult_version #
+- action_saludo_con_nombre  #
+- action_anotar_decision_version  #
+- action_verificar_nombre   #
+- action_dar_opciones_frame #
+- action_dar_detalles_de_x  #
+- action_session_start  #
+- action_despedida
+
+
+entities:
+- nombre
+- framework
+- version_frame
+- cant_horas
+- nombre_trabajo
+
+
+slots:
+  s_nombre_user:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: nombre
+
+  s_framework:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: framework
+
+  s_version:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: version_frame
+
+  s_frame_ultima_version:
+    type: bool
+    initial_value: false
+    mappings:
+    - type: custom
+
+  s_decision_version:
+    type: bool
+    initial_value: false
+    mappings:
+    - type: from_intent
+      intent: cambia_version
+      value: true
+    - type: from_intent
+      intent: no_cambia
+      value: false
+
+  s_decision_framework:
+    type: bool
+    initial_value: false
+    mappings:
+    - type: custom
+
+  s_cant_horas:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: cant_horas
+
+  s_nombre_trabajo:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: nombre_trabajo
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,37 @@
+D:\ProgramFiles\Anaconda3\envs\rasa_inst\lib\site-packages\rasa\core\tracker_store.py:1042: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+D:\ProgramFiles\Anaconda3\envs\rasa_inst\lib\site-packages\rasa\shared\utils\validation.py:134: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+D:\ProgramFiles\Anaconda3\envs\rasa_inst\lib\site-packages\pkg_resources\__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+D:\ProgramFiles\Anaconda3\envs\rasa_inst\lib\site-packages\pkg_resources\__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('ruamel')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+D:\ProgramFiles\Anaconda3\envs\rasa_inst\lib\site-packages\pkg_resources\__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('ruamel')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+D:\ProgramFiles\Anaconda3\envs\rasa_inst\lib\site-packages\pkg_resources\__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('ruamel.yaml')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+D:\ProgramFiles\Anaconda3\envs\rasa_inst\lib\site-packages\sanic_cors\extension.py:39: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  SANIC_VERSION = LooseVersion(sanic_version)
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.endpoint[0m  - Starting action endpoint server...
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_verificar_nombre'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_saludo_con_nombre'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_pedir_versiones_rasa'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_verificar_framework'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_verificar_decision_version'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_update_datos_version'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_que_se_tome_tiempo'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_que_no_sea_lento_al_cambio'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_verificar_decision_framework'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_update_datos_framework'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_verificar_ultima_version'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_dar_detalles_ult_version'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_anotar_decision_version'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_dar_opciones_frame'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_dar_detalles_de_x'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.executor[0m  - Registered function for 'action_anotar_decision_frame'.
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.endpoint[0m  - Starting plugins...
+2023-10-19 19:20:00 [1;30mINFO    [0m [34mrasa_sdk.endpoint[0m  - Action endpoint is up and running on http://0.0.0.0:5055

@@ -1,0 +1,137 @@
+---
+version: "3.1"
+
+stories:
+
+# - story: carga
+#   steps:
+#   - action: action_start
+
+- story: Bienvenida :)  #
+  steps:
+  - intent: saludo
+  - action: action_saludo_con_nombre
+
+- story: frame  #
+  steps:
+  - or:
+    - intent: feliz
+    - intent: triste
+  - action: action_utter_framework
+  - slot_was_set:
+    - s_framework
+  - checkpoint: framework_yes
+
+- story: version  #
+  steps:
+  - checkpoint: framework_yes
+  - intent: afirmativo  #agregar un mensaje de por medio
+  - action: utter_great
+  - action: action_version
+
+- story: capturar el framework que usa  #
+  steps:
+  - intent: capturar_framework
+  - action: action_guardar_frame
+
+- story: capturar la version de framework #
+  steps:
+  - intent: capturar_version
+  - action: action_guardar_version
+
+- story: saber si tiene la ultima version #
+  steps:
+  - intent: tengo_u_version
+  - action: action_verificar_ultima_version
+  - intent: quiere_mas_info
+  - action: action_dar_detalles_ult_version
+
+- story: cambiar de version #
+  steps:
+  - or:
+    - intent: cambia_version
+    - intent: no_cambia
+  - action: action_anotar_decision_version
+
+- story: actualizó la version #
+  steps:
+  - intent: cambio_de_version
+  - slot_was_set:
+    - s_decision_version: true
+  - slot_was_set:
+    - s_framework
+  - action: action_cambio_de_version
+
+- story: actualizó la version - no tiene datos..    #
+  steps:
+  - intent: cambio_de_version
+  - slot_was_set:
+    - s_decision_version: False
+  - action: utter_no_hay_datos_version
+
+- story: pide frameworks para emigrar #
+  steps:
+  - intent: datos_para_emigrar
+  - slot_was_set:
+    - s_framework
+  - action: action_dar_opciones_frame
+
+- story: va a cambiar de framework #
+  steps:
+  - intent: cambiar_framework    
+  - slot_was_set:
+    - s_framework
+  - action: action_guardar_decision_frame
+
+- story: pide detalles de framework #
+  steps:
+  - intent: detalles_de_framework
+  - action: action_dar_detalles_de_x
+
+- story: actualizó el framework #
+  steps:
+  - intent: cambio_de_framework
+  - slot_was_set:
+    - s_decision_framework: True
+  - slot_was_set:
+    - s_framework
+  - action: action_cambio_de_framework
+
+- story: actualizó el framework - no hay datos #
+  steps:
+  - intent: cambio_de_framework
+  - slot_was_set:
+    - s_decision_framework: False
+  - action: utter_no_hay_datos_frame
+
+- story: cuenta como se maneja para trabajar  #
+  steps:
+  - intent: hablar_de_trabajo
+  - action: utter_horas_semanales
+  - intent: horas_semanales
+  - action: action_guardar_hs_max
+
+- story: mas trabajo  #
+  steps:
+  - or:
+    - intent: nuevo_trabajo
+    - intent: cambia_hs_trabajo
+  - action: action_hs_trabajo
+  
+- story: preguntar cuantas horas trabaja  #
+  steps:
+  - intent: horas_de_trabajo
+  - slot_was_set:
+    - s_framework
+  - action: action_dar_horas_trabajo
+
+- story: preguntar trabajos #
+  steps:
+  - intent: dame_mis_trabajos
+  - action: action_dar_trabajos
+
+- story: terminé trabajo  #
+  steps:
+  - intent: fin_trabajo
+  - action: action_fin_trabajo
+

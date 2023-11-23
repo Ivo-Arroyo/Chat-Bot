@@ -1,0 +1,42 @@
+---
+version: "3.1"
+
+rules:
+
+- rule: recuperar el estado al comenzar
+  steps:
+  - action: action_session_start
+
+#- rule: Saludar solo al comienzo
+#  conversation_start: true
+#  steps:
+#  - intent: saludo
+#  - action: action_saludo_con_nombre
+
+- rule: no entiendo nada
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+- rule: guardar el estado del nombre
+  steps:
+  - intent: capturar_nombre
+  - action: action_verificar_nombre
+
+
+- rule: Despedir cada vez que se despide
+  steps:
+  - intent: despedida
+  - action: action_despedida
+
+# - rule: guardar el estado del framework
+#   steps:
+#   - intent: capturar_framework
+#   - action: action_verificar_framework
+
+#- rule: start bot
+#  steps:
+#  - intent: start_bot
+#  - action: utter_saludo
+#
+
